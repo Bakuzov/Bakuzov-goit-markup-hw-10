@@ -1,28 +1,25 @@
 @import './utils/vars';
 @import './utils/mixin';
 @import './utils/visually-hidden';
-@import './base/grid';
 
 @import './base/reset';
-
 @import './base/base';
 
 @import './layaut/section';
 @import './layaut/header';
-@import './components/mobile-menu';
+
+@import './components/logo';
+@import './components/social';
+@import './components/btn';
+@import './components/mobile_menu';
 @import './components/hero';
-@import './components/features';
-@import './components/work';
+@import './components/benefits';
+@import './components/our_work';
 @import './components/team';
 @import './components/customer';
 @import './layaut/footer';
 @import './components/modal';
 @import './components/callback';
 
-@import './components/filter';
-@import './components/projects';
+@import './components/portfolio';
 
-@import './components/logo';
-@import './components/social';
-
-@import './components/btn';

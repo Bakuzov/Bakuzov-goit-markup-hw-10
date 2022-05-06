@@ -74,3 +74,30 @@
   font-size: 16px;
   line-height: 1.88;
 }
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent);
+}
+
+.grid-item {
+  flex-basis: calc((100% - (var(--indent) * (var(--items) - 1))) / var(--items));
+}
+.filter__list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  column-gap: 8px;
+  row-gap: 15px;
+
+  @include mq(tablet) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  @include mq(desktop) {
+    margin-bottom: 50px;
+  }
+}
