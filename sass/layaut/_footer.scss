@@ -1,0 +1,123 @@
+.footer {
+  background-color: var(--bg-color-third);
+}
+.footer__cotainer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include mq(tablet) {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+  @include mq(desktop) {
+    align-items: baseline;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+.footer__contacts {
+  text-align: center;
+  margin: 0 0 60px 0;
+  @include mq(tablet) {
+    margin: 0 195px 60px 0;
+  }
+  @include mq(desktop) {
+    text-align: start;
+    margin: 0 70px 0 0;
+  }
+}
+.footer__logo {
+  margin-bottom: 20px;
+}
+.contacts__list {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.contacts__street {
+  color: var(--second-text-color);
+  text-decoration: none;
+}
+
+.contacts__link {
+  display: block;
+  margin-top: 9px;
+  color: var(--address-color);
+  text-decoration: none;
+
+  transition: color var(--animation);
+  @include mq(notDesktop) {
+    margin-top: 8px;
+  }
+}
+.contacts__link:hover,
+.contacts__link:focus {
+  color: var(--brand-color);
+}
+
+.footer__social {
+  text-align: center;
+  margin: 0 0 60px 0;
+  @include mq(desktop) {
+    text-align: start;
+    margin: 0 93px 0 0;
+  }
+}
+
+.footer__subskribe {
+  text-align: center;
+  @include mq(desktop) {
+    text-align: start;
+  }
+}
+.footer__title {
+  margin-bottom: 20px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--second-text-color);
+}
+
+.subskribe__form {
+  // text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include mq(desktop) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.subskribe__input {
+  display: block;
+  width: 100%;
+  max-width: 450px;
+  height: 50px;
+  margin: 0 0 20px 0;
+  padding-left: 16px;
+  color: var(--second-text-color);
+  background-color: var(--bg-color-third);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  @include mq(tablet) {
+    width: 450px;
+  }
+  @include mq(desktop) {
+    width: 358px;
+    margin: 0 12px 0 0;
+  }
+}
+.subskribe__input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+}
